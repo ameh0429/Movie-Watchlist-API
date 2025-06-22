@@ -61,11 +61,6 @@ app.use((err, req, res, next) => {
   });
 });
 
-// 404 handler
-// app.use('*', (req, res) => {
-//   res.status(404).json({ error: 'Route not found' });
-// });
-
 // Database connection and server startup
 const startServer = async () => {
   try {

@@ -11,12 +11,6 @@ const sequelize = new Sequelize({
   password: process.env.DB_PASSWORD,
   dialect: process.env.DIALECT,
   logging: Boolean(process.env.DB_LOGGING)
-  // pool: {
-  //   max: 10,
-  //   min: 0,
-  //   acquire: 30000,
-  //   idle: 10000,
-  // },
 });
 
 export default sequelize;
